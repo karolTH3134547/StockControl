@@ -15,3 +15,6 @@ Instalación:
 1. Ejecutar database.sql en MySQL
 2. pip install -r requirements.txt
 3. python app.py
+   requirements.txt
+Flask
+pymysql
