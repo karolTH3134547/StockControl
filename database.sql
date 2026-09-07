@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS inventario_barrio;
 USE inventario_barrio;
 
-CREATE TABLE productos (
+CREATE TABLE productos(
   id INT AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(100) NOT NULL,
   categoria VARCHAR(50),
@@ -11,10 +11,11 @@ CREATE TABLE productos (
   proveedor VARCHAR(100)
 );
 
-CREATE TABLE usuarios (
+CREATE TABLE usuarios(
   id INT AUTO_INCREMENT PRIMARY KEY,
-  usuario VARCHAR(50),
-  clave VARCHAR(100)
+  usuario VARCHAR(50) NOT NULL UNIQUE,
+  clave VARCHAR(100) NOT NULL
 );
 
-INSERT INTO usuarios(usuario, clave) VALUES ('admin','1234');
+-- Usuario inicial para probar
+INSERT INTO usuarios(usuario, clave) VALUES('administracion', '1234');
