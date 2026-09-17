@@ -21,7 +21,6 @@ Sistema web para el control de inventario de una tienda de barrio. Permite gesti
 - Login con validación
 - Dashboard con resumen: total productos, unidades y valor total
 - Tabla de productos con ID, nombre, cantidad, precio compra, venta y ganancia
-- Diseño con colores 
 - Cálculo automático de inventario
 
 ### ▶️ Cómo ejecutar local
